@@ -1,105 +1,133 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>Byte Education</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
     <body>
-        <header class="page-header">
-            <nav>
-                <a href="./index.html" class="logo link" lang="en">
-                    <span class="logo-header-web">Web</span>
-                    <span class="logo-header-studio">Studio</span>
-                </a>
-                <ul class="site-nav list">
-                    <li><a href="./index.html" class="link title current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link title">Портфолио</a></li>
-                    <li><a href="#" class="link title">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="header-contacts list">
-                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
+        <header class="header">
+            <div class="container flex">
+                <div>
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <button class="btn btn-orange">Get Started</button>
+                </div>
+            </div>
         </header>
-        <main>
-           <section class="hero">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="btn">Заказать услугу</button>
-           </section>
-           <section class="features">
-                <h2 class="features-title">Особенности</h2>
-                <ul class="features-list list">
-                    <li>
-                        <h3 class="title">Внимание к деталям</h3>
-                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li>
-                        <h3 class="title">Пунктуальность</h3>
-                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li>
-                        <h3 class="title">Планирование</h3>
-                        <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li>
-                        <h3 class="title">Современные технологии</h3>
-                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="we-doing">
-                <h2 class="we-doing-title title">Чем мы занимаемся</h2>
-                <ul class="we-doing-list list">
-                    <li><img src="./images/the-man-works-hard.jpg" alt="человек усердно работает" width="370"></li>
-                    <li><img src="./images/man-plans.jpg" alt="человек планирует" width="370"></li>
-                    <li><img src="./images/man-and-modern-technology.jpg" alt="человек и современные технологии" width="370"></li>
-                </ul>
-            </section>
-            <section class="our-team">
-                <h2 class="our-team-title title">Наша команда</h2>
-                <ul class="our-team-list list">
-                    <li>
-                        <img src="./images/product-designer.jpg" alt="дизайнер продукта" width="270">
-                        <h3 class="title team font-weight">Игорь Демьяненко</h3>
-                        <p class="team" lang="en">Product Designer</p>
-                    </li>
-                    <li>
-                        <img src="./images/frontend-developer.jpg" alt="фронтенд-разработчик" width="270">
-                        <h3 class="title team font-weight">Ольга Репина</h3>
-                        <p class="team" lang="en">Frontend Developer</p>
-                    </li>
-                    <li>
-                        <img src="./images/marketing.jpg" alt="маркетинг" width="270">
-                        <h3 class="title team font-weight">Николай Тарасов</h3>
-                        <p class="team" lang="en">Marketing</p>
-                    </li>
-                    <li>
-                        <img src="./images/ui-designer.jpg" alt="дизайнер пользовательского интерфейса" width="270">
-                        <h3 class="title team font-weight">Михаил Ермаков</h3>
-                        <p class="team" lang="en">UI Designer</p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer class="page-footer">
-            <a href="./index.html" class="logo link" lang="en">
-                <span class="logo-footer-web">Web</span>
-                <span class="logo-footer-studio">Studio</span>
-            </a>
-            <address>
-                <ul class="footer-address list">
-                    <li><a href="https://goo.gl/maps/tF9MFv9AmFwzdvH66" class="footer-address-maps link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="footer-address-contacts link">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="footer-address-contacts link">+38 096 111 11 11</a></li>
-                </ul>
-            </address>
+        <section class="container-about">
+            <div class="container about">
+                <div>
+                    <h1 class="about-title">Grow your subscription business</h1>
+                    <p class="about-text">
+                        Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business end-to-end.
+                    </p>
+                    <div>
+                        <button class="btn btn-violet">Get Started</button>
+                        <button class="btn btn-transparent">Try</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/first-man.png" alt="first-man">
+                </div>
+            </div>
+        </section>
+        <section class="container subscribe">
+            <div>
+                <img src="./img/second-man.png" alt="second-man"> 
+            </div>
+            <div>
+                <h2 class="subscribe-title">Subscription index</h2>
+                <form>
+                    <input class="input" type="email" placeholder="email">
+                    <button class="btn btn-violet">Try</button>
+                </form>
+            </div>
+        </section>
+        <section class="container plan">
+            <h2 class="plan-title">Get the right plan for future</h2>
+            <div class="plan-flex">
+                <div class="item">
+                    <p class="item-text">Starter</p>
+                    <h3 class="item-title">Free</h3>
+                    <ul>
+                        <li class="item-list">1 Website</li>
+                        <li class="item-list">5 GB Hosting</li>
+                        <li class="item-list">Limited Support</li>
+                    </ul>
+                    <button class="btn btn-item">Get Started</button>
+                </div>
+                <div class="item">
+                    <p class="item-text">Premium</p>
+                    <h3 class="item-title">$29<span>/month</span></h3>
+                    <ul>
+                        <li class="item-list">10 Website</li>
+                        <li class="item-list">15 GB Hosting</li>
+                        <li class="item-list">Premium Support</li>
+                    </ul>
+                    <button class="btn btn-item">Get Started</button>
+                </div>
+                <div class="item">
+                    <p class="item-text">Enterprise</p>
+                    <h3 class="item-title">$49<span>/month</span></h3>
+                    <ul>
+                        <li class="item-list">Unlimited Website</li>
+                        <li class="item-list">50 GB Hosting</li>
+                        <li class="item-list">Premium Support</li>
+                    </ul>
+                    <button class="btn btn-item">Get Started</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container flex">
+                <div>
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Premium</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </footer>
     </body>
 </html>
